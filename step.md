@@ -17,14 +17,15 @@ Install the Twilio Python helper library into the virtualenv:
 pip install twilio
 ~~~
 Create a file named whatsapp.py and write or paste in the following code:
-~~from twilio.rest import Client
+~~~
+from twilio.rest import Client
 
-# client credentials are read from TWILIO_ACCOUNT_SID and AUTH_TOKEN
+client credentials are read from TWILIO_ACCOUNT_SID and AUTH_TOKEN
 client = Client()
 
-# this is the Twilio sandbox testing number
+this is the Twilio sandbox testing number
 from_whatsapp_number='whatsapp:+14155238886'
-# replace this number with your own WhatsApp Messaging number
+replace this number with your own WhatsApp Messaging number
 to_whatsapp_number='whatsapp:+15005550006'
 
 client.messages.create(body='Ahoy, world!',
